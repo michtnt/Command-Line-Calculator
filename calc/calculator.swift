@@ -24,9 +24,9 @@ class Calculator {
             num1 = Int(args[flag])!;
         }
         // for the second number in argument
-//        if Int(args[flag+2]) != nil {
-//            num2 = Int(args[flag+2])!;
-//        }
+        if Int(args[flag+2]) != nil {
+            num2 = Int(args[flag+2])!;
+        }
         // operation always between numbers (%3)
         operation = args[flag+1];
         
