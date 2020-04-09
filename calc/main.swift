@@ -8,28 +8,27 @@
 
 import Foundation
 
-// setup ./calc arguments
+// get calculator program arguments
 var args = ProcessInfo.processInfo.arguments
+// remove ./calc
 args.removeFirst()
 
-// for later use to print the final result
+// variable to store the calculation result
 var result: Int
 
-// validate arguments; if the arguments are all valid then calculate
+// validate arguments; if returns true means arguments valid then calculate
 if(Validator(input: args).validateInput()){
     // if there's only one character on args
-    if(args.count == 1){
-        // if the character is integer
+    if(args.count == 1){ // if it's a number
         if(Int(args[0]) != nil){
-        print(Int(args[0])!)
-        }
-        else{
+             print(Int(args[0])!)
+        } else{ // if it's not a number
             ExceptionHandler().invalidInput(error: "\(args[0])")
         }
-    }
-// if args > 2 (valid) continue to calculate from Calculator() class
+     }
+// if args > 2 continue to calculate from Calculator() class
     else if(args.count > 2){
-        // calculate till the end if it stays valid and then return the final result
+        // calculate until the end of the arguments and then return the final result
         result = Calculator(args: args).returnResult();
         print(result);
     }
