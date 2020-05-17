@@ -109,8 +109,6 @@ The Xcode project must unzip successfully and compile without errors.
 
 - Deduct 1 mark for **each** failing test in the `CalcTest` suite.
 
-  ​
-
 #### Style: 3 marks
 
 - Deduct up to 1 mark for bad or inconsistent indentation, whitespace, or braces.  
