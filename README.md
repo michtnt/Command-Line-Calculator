@@ -4,12 +4,12 @@
 
 The purpose of this project is to demonstrate competence in the following skills:
 
-- [ ] Program design
-- [ ] Array and string manipulation
-- [ ] Command line arguments
-- [ ] Creating classes and methods in Swift
-- [ ] Exception handling
-- [ ] Automated testing
+- [x] Program design
+- [x] Array and string manipulation
+- [x] Command line arguments
+- [x] Creating classes and methods in Swift
+- [x] Exception handling
+- [x] Automated testing
 
 These tasks reflect all the subject objectives.
 
